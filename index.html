@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galería Música XD</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.css">
+
+</head>
+<body>
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="./index.html">Galería Musical</a>
+
+    <a class="navbar-brand" href="#message">Ir al mensaje</a>
+
+  </div>
+  <!-- Botones pausa y play carrousel -->
+  <div class="text-center mt-3">
+    <button id="pauseButton" class="btn btn-danger">Pausar</button>
+    <button id="playButton" class="btn btn-success d-none">Reanudar</button>
+  </div>
+
+</nav>
+<div>
+
+
+</div>
+<div class="container" style="margin-top: 70px;">
+  <!-- Título principal -->
+  <div class="row text-center mb-4">
+    <div class="col">
+      <h1 class="display-4">Galería Música Mel XD</h1>
+      <p class="lead">La letra se exageró un poco, con fines artísticos para mantener la rima jaja</p>
+    </div>
+  </div>
+
+  <!-- Carrusel -->
+  <div id="galleryCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="360000">
+    <!-- Indicadores -->
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#galleryCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#galleryCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#galleryCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      <button type="button" data-bs-target="#galleryCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+      <button type="button" data-bs-target="#galleryCarousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
+      <button type="button" data-bs-target="#galleryCarousel" data-bs-slide-to="5" aria-label="Slide 6"></button>
+      <button type="button" data-bs-target="#galleryCarousel" data-bs-slide-to="6" aria-label="Slide 7"></button>
+      <button type="button" data-bs-target="#galleryCarousel" data-bs-slide-to="7" aria-label="Slide 8"></button>
+      <button type="button" data-bs-target="#galleryCarousel" data-bs-slide-to="8" aria-label="Slide 9"></button>
+    </div>
+
+    <!-- Slides -->
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="https://via.placeholder.com/800x400" class="d-block w-100" alt="Arabny">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Arabny</h5>
+          <audio controls>
+            <source src="./musica/Arabny.mp3" type="audio/mpeg">
+            Tu navegador no soporta el elemento de audio.
+          </audio>
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <img src="https://via.placeholder.com/800x400" class="d-block w-100" alt="xd">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Latino" para mi crush"</h5>
+          <audio controls>
+            <source src="./musica/melafin%20latino%20para%20mi%20crush%20.mp3" type="audio/mpeg">
+            Tu navegador no soporta el elemento de audio.
+          </audio>
+        </div>
+      </div>
+
+      <div class="carousel-item">
+        <img src="https://via.placeholder.com/800x400" class="d-block w-100" alt="m">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Rap </h5>
+          <audio controls>
+            <source src="./musica/Melanie%201.2%20Nice.mp3" type="audio/mpeg">
+            Tu navegador no soporta el elemento de audio.
+          </audio>
+        </div>
+      </div>
+
+
+      <div class="carousel-item">
+        <img src="https://via.placeholder.com/800x400" class="d-block w-100" alt="M">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Tango</h5>
+          <audio controls>
+            <source src="./musica/Tango%20_.mp3" type="audio/mpeg">
+            Tu navegador no soporta el elemento de audio.
+          </audio>
+        </div>
+      </div>
+
+
+
+      <div class="carousel-item">
+        <img src="https://via.placeholder.com/800x400" class="d-block w-100" alt="Mela Sinti">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Mela Sinti</h5>
+          <audio controls>
+            <source src="./musica/MelaSinti.mp3" type="audio/mpeg">
+            Tu navegador no soporta el elemento de audio.
+          </audio>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="https://via.placeholder.com/800x400" class="d-block w-100" alt="Electromel 1">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Electromel 1</h5>
+          <audio controls>
+            <source src="./musica/electromel_1.mp3" type="audio/mpeg">
+            Tu navegador no soporta el elemento de audio.
+          </audio>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="https://via.placeholder.com/800x400" class="d-block w-100" alt="Mela 2.0 Acapella">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Mela 2.0 Acapella</h5>
+          <audio controls>
+            <source src="./musica/Mela%202.0%20Acapella%20.mp3" type="audio/mpeg">
+            Tu navegador no soporta el elemento de audio.
+          </audio>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="https://via.placeholder.com/800x400" class="d-block w-100" alt="Beki G Latino">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Beki G Latino</h5>
+          <audio controls>
+            <source src="./musica/melafin%20Beki%20G%20latino%20para%20micrush%20.mp3" type="audio/mpeg">
+            Tu navegador no soporta el elemento de audio.
+          </audio>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="https://via.placeholder.com/800x400" class="d-block w-100" alt="Melahhh">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Melahhh</h5>
+          <audio controls>
+            <source src="./musica/Melahhh.mp3" type="audio/mpeg">
+            Tu navegador no soporta el elemento de audio.
+          </audio>
+        </div>
+      </div>
+    </div>
+
+    <!-- Controles del carrusel -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#galleryCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Anterior</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#galleryCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Siguiente</span>
+    </button>
+  </div>
+</div>
+
+
+
+<div id="message" class="message-container">
+  <h1>Holas, Oye perdona por molestarte.</h1>
+
+  <p>Hace tiempo quería decirte algo, pero no encontraba cómo. Creo que a veces te respondías por amabilidad los msms, y nunca quise incomodarte <span class="emoji">😅</span>. Si algún rato llegas a leer esto, solo quiero que sepas que, de un tiempo para acá, me has empezado a parecer atractiva... Y eso no me pasa casi nunca.</p>
+
+  <p>Quizá sea porque tenemos cosas en común: los gustos por la comida, como el coco, los chifles, los postres, y hasta recientemente el sushi <span class="emoji">😄</span>.</p>
+
+  <p>Admiro tu forma de ser: alegre, amable y buena persona (hasta donde sé, no eres bandida, ¿o sí? <span class="emoji">😅</span>). Es curioso que hasta compartimos apellido, ¡qué loco eso!</p>
+
+  <p>Sin darme cuenta, empecé a ponerme nervioso cuando estabas cerca. Digo pendejadas..., y creo que el grupito de siempre ya se dio cuenta, y no sé si tú también <span class="emoji">😔</span>.</p>
+
+  <p>No quería decir nada porque valoro mucho la amistad que había y no quería arruinar eso. Me cayeron súper bien.</p>
+
+  <p>Pero la verdad es evidente que no te llamo la atención. Tal vez por mi forma de ser medio pendeja, o por ser feo <span class="emoji">😂</span> (menos cuando estoy de traje, ahí soy "Feo Premium" <span class="emoji">😎</span>) o por cualquier otra razón.</p>
+
+  <p>Empecé a alejarme para no hacerme ideas… aunque cada vez que te veía con las chicas, olvidaba mis planes y terminaba acompañándolas <span class="emoji">😅</span>.</p>
+
+  <p>Busqué y me junté con más amig@s de todo lado, pero no es lo mismo <span class="emoji">😂</span>.</p>
+  <p>Y todo por haber agarrado un poco de agua en el gimnasio... Si ese día hubiese llevado mi botella como casi siempre lo hago, nunca les hubiera hablado al Andrew ni a ustedes, y no estaría así como imbécil <span class="emoji">😔</span>.</p>
+
+  <p>Cuando mandaste esos audios diciendo que te faltaba nota en inventario, me dejaste triste. Con esa voz casi quebrándose, nunca te escuché así. Me dejó un nudo en la garganta <span class="emoji">😅</span>.</p>
+
+  <p>Quería decírtelo en persona tantas veces… pero literalmente me quedo en blanco.</p>
+
+  <p>Si no quieres no digas nada jaja espero no te enojes... :' </p><p> Al menos quería que lo supieras.</p>
+
+  <p class="highlight">Cuídate mucho, Lokita.</p>
+</div>
+
+
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+  // Detener música al cambiar de slide
+  const carousel = document.getElementById('galleryCarousel');
+  carousel.addEventListener('slide.bs.carousel', function () {
+    const audios = document.querySelectorAll('audio');
+    audios.forEach(audio => {
+      audio.pause(); // Pausa cualquier audio en reproducción
+      audio.currentTime = 0; // Reinicia al principio
+    });
+  });
+</script>
+
+
+
+<!-- Scripts para controlar el carrusel -->
+<script>
+  const carouselElement = document.querySelector('#galleryCarousel');
+  const pauseButton = document.querySelector('#pauseButton');
+  const playButton = document.querySelector('#playButton');
+  const carouselInstance = new bootstrap.Carousel(carouselElement, { interval: 250000 }); // Inicializar el carrusel
+
+  // Botón de Pausar
+  pauseButton.addEventListener('click', () => {
+    carouselInstance.pause(); // Detiene el carrusel
+    pauseButton.classList.add('d-none'); // Oculta botón Pausar
+    playButton.classList.remove('d-none'); // Muestra botón Reanudar
+  });
+
+  // Botón de Reanudar
+  playButton.addEventListener('click', () => {
+    carouselInstance.cycle(); // Reanuda el carrusel
+    playButton.classList.add('d-none'); // Oculta botón Reanudar
+    pauseButton.classList.remove('d-none'); // Muestra botón Pausar
+  });
+</script>
+</body>
+</html>
+

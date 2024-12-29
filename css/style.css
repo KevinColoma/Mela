@@ -1,0 +1,98 @@
+/* Ajustes generales */
+body {
+  padding-top: 70px; /* Evita que el contenido quede bajo la navbar */
+  background: linear-gradient(135deg, #784178, #f8bbd0);
+  color: #4a148c;
+  font-family: Arial, sans-serif; /* Fuente secundaria legible */
+  text-align: center;
+}
+
+/* Barra de navegación */
+.navbar {
+  background-color: #f48fb1;
+  text-align: center;
+}
+.navbar-brand {
+  font-family: 'Cursive', "Lucida Handwriting", cursive;
+  color: #000000 !important;
+}
+.navbar-brand:hover {
+  color: #ffc1e3 !important;
+}
+
+/* Tipografía */
+h1, h5 {
+  font-family: 'Cursive', "Lucida Handwriting", cursive;
+}
+h1 {
+  color: #6a1b9a;
+}
+h5 {
+  color: #ad1457;
+}
+p {
+  font-family: 'Cursive', "Segoe Script", cursive;
+  color: #ef79ad;
+  text-align: center;
+}
+
+/* Galería */
+.gallery img {
+  width: 100%;
+  height: auto;
+  border-radius: 20%; /* Suaviza los bordes */
+  transition: transform 0.3s, box-shadow 0.5s;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.9);
+}
+.gallery img:hover {
+  transform: scale(1.05);
+  border-radius: 50%; /* Cambio a bordes circulares */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+}
+
+/* Carrusel */
+.carousel img {
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+.carousel-caption h5 {
+  font-family: 'Cursive', "Lucida Handwriting", cursive;
+  color: #ad1457;
+}
+.carousel-caption audio {
+  margin-top: 10px;
+}
+
+/* Contenedor de mensajes */
+.message-container {
+  max-width: 600px;
+  margin: 50px auto;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+.message-container h1 {
+  font-size: 1.8em;
+  margin-bottom: 20px;
+  color: #444;
+}
+.message-container p {
+  margin-bottom: 15px;
+  color: blueviolet;
+}
+
+/* Elementos destacados */
+.highlight {
+  font-weight: bold;
+}
+.emoji {
+  font-size: 1.2em;
+}
+
+/* Audio */
+audio {
+  width: 100%;
+  margin-top: 10px;
+  border-radius: 5px; /* Armoniza con el diseño general */
+}
