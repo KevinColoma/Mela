@@ -59,19 +59,29 @@ p {
   font-family: 'Cursive', "Lucida Handwriting", cursive;
   color: #ad1457;
 }
-.carousel-caption audio {
-  margin-top: 10px;
+
+
+.carousel-inner img {
+  height: auto; /* Permite ajustar dinámicamente la altura */
+  max-height: 80vh; /* Ajusta en función del viewport */
+}
+.message-container {
+  max-width: 90%;
+  padding: 15px; /* Mejor experiencia móvil */
+}
+@media (max-width: 576px) {
+  audio {
+    width: 90%; /* Reduce el ancho del reproductor */
+    margin: 0 auto; /* Centra el reproductor */
+  }
 }
 
-/* Contenedor de mensajes */
-.message-container {
-  max-width: 600px;
-  margin: 50px auto;
-  background: #fff;
-  border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  padding: 20px;
+.carousel-caption audio {
+  margin-top: 10px;
+  font-size: 0.9rem; /* Reduce el texto en dispositivos móviles */
 }
+
+
 .message-container h1 {
   font-size: 1.8em;
   margin-bottom: 20px;
