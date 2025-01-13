@@ -23,16 +23,32 @@ body {
 /* Tipografía */
 h1, h5 {
   font-family: 'Cursive', "Lucida Handwriting", cursive;
+  display: inline-block; /* Asegura que el fondo se ajuste al texto */
+padding: 17px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Añade una sombra para un efecto más destacado */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 1); /* Sombra en el texto */
 }
 h1 {
   color: #6a1b9a;
+  border-radius: 100%;
+  display: inline-block; /* Asegura que el fondo se ajuste al texto */
+
+  margin: 20px; /* Aplica 20px de margen en todos los lados */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Añade una sombra para un efecto más destacado */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Sombra en el texto */
 }
 h5 {
   color: #ad1457;
+  background-color: rgba(0, 0, 0, 0.5); /* Fondo negro translúcido */
+  border-radius:50%;
+  display: inline-block; /* Asegura que el fondo se ajuste al texto */
+  font-weight: bold; /* Resalta el texto */
 }
 p {
   font-family: 'Cursive', "Segoe Script", cursive;
   color: #ef79ad;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Sombra en el texto */
+
   text-align: center;
 }
 
@@ -40,7 +56,7 @@ p {
 .gallery img {
   width: 100%;
   height: auto;
-  border-radius: 20%; /* Suaviza los bordes */
+  border-radius: 80%; /* Suaviza los bordes */
   transition: transform 0.3s, box-shadow 0.5s;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.9);
 }
@@ -52,7 +68,7 @@ p {
 
 /* Carrusel */
 .carousel img {
-  border-radius: 15px;
+  border-radius: 50px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 .carousel-caption h5 {
@@ -60,36 +76,47 @@ p {
   color: #ad1457;
 }
 
-
 .carousel-inner img {
   height: auto; /* Permite ajustar dinámicamente la altura */
   max-height: 80vh; /* Ajusta en función del viewport */
 }
+
+/* Contenedor del mensaje */
 .message-container {
-  max-width: 90%;
-  padding: 15px; /* Mejor experiencia móvil */
-}
-@media (max-width: 576px) {
-  audio {
-    width: 90%; /* Reduce el ancho del reproductor */
-    margin: 0 auto; /* Centra el reproductor */
-  }
-}
+  max-width: 700px; /* Limita el ancho del contenedor */
+  padding: 30px; /* Añade espacio interno */
+  background: url('../ImagesXD/pngwing.com (1).png') center/cover no-repeat; /* Imagen de pergamino */
+  margin: 50px auto; /* Centra horizontalmente */
 
-.carousel-caption audio {
-  margin-top: 10px;
-  font-size: 0.9rem; /* Reduce el texto en dispositivos móviles */
+  font-family: 'Cursive', "Segoe Script", cursive;
+  font-size: 1.1em;
+  text-align: justify; /* Alinea el texto */
+  border-radius: 80px; /* Bordes suaves */
+  overflow: hidden; /* Evita desbordamientos */
+
 }
 
-
+/* Ajustes de texto dentro del contenedor */
 .message-container h1 {
   font-size: 1.8em;
   margin-bottom: 20px;
-  color: #444;
+  color: #4b2e20;
+  text-align: center;
 }
 .message-container p {
-  margin-bottom: 15px;
+  max-width: 90%; /* Limita el ancho del texto */
+  margin: 0 auto 15px auto; /* Centra horizontalmente */
   color: blueviolet;
+  color: #5c3b2e; /* Color marrón para el texto */
+
+  word-wrap: break-word; /* Asegura que las palabras largas no desborden */
+}
+
+/* Audio */
+audio {
+  width: 100%;
+  margin-top: 10px;
+  border-radius: 5px; /* Armoniza con el diseño general */
 }
 
 /* Elementos destacados */
@@ -100,9 +127,14 @@ p {
   font-size: 1.2em;
 }
 
-/* Audio */
-audio {
-  width: 100%;
-  margin-top: 10px;
-  border-radius: 5px; /* Armoniza con el diseño general */
+/* Media Query para dispositivos pequeños */
+@media (max-width: 576px) {
+  .message-container {
+    max-width: 90%; /* Adapta el contenedor al tamaño de pantalla */
+    padding: 20px;
+  }
+  audio {
+    width: 90%; /* Reduce el ancho del reproductor */
+    margin: 0 auto; /* Centra el reproductor */
+  }
 }
