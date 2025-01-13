@@ -1,40 +1,56 @@
 /* Ajustes generales */
 body {
   padding-top: 70px; /* Evita que el contenido quede bajo la navbar */
-  background: linear-gradient(135deg, #784178, #f8bbd0);
+  background: linear-gradient(135deg, #784178, #ff0059);
   color: #4a148c;
   font-family: Arial, sans-serif; /* Fuente secundaria legible */
   text-align: center;
+  box-shadow: 0 4px 8px rgb(21, 5, 5); /* Añade una sombra para un efecto más destacado */
+
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 1); /* Sombra en el texto */
+
 }
 
 /* Barra de navegación */
 .navbar {
   background-color: #f48fb1;
   text-align: center;
+  box-shadow: 0 4px 8px rgb(21, 5, 5); /* Añade una sombra para un efecto más destacado */
+
 }
 .navbar-brand {
   font-family: 'Cursive', "Lucida Handwriting", cursive;
   color: #000000 !important;
+
 }
 .navbar-brand:hover {
-  color: #ffc1e3 !important;
+  color: #b11057 !important;
 }
+footer{
+  font-family: 'Cursive', "Lucida Handwriting", cursive;
+  padding: 17px;
+  border-radius: 10px;
 
+  background-color: black;
+  box-shadow: 0 4px 15px rgb(21, 5, 5); /* Añade una sombra para un efecto más destacado */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 1); /* Sombra en el texto */
+}
 /* Tipografía */
 h1, h5 {
   font-family: 'Cursive', "Lucida Handwriting", cursive;
   display: inline-block; /* Asegura que el fondo se ajuste al texto */
 padding: 17px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Añade una sombra para un efecto más destacado */
+  box-shadow: 0 4px 8px rgb(21, 5, 5); /* Añade una sombra para un efecto más destacado */
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 1); /* Sombra en el texto */
 }
 h1 {
-  color: #6a1b9a;
+  color: #af2eff;
   border-radius: 100%;
+padding: 15px;
   display: inline-block; /* Asegura que el fondo se ajuste al texto */
 
   margin: 20px; /* Aplica 20px de margen en todos los lados */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Añade una sombra para un efecto más destacado */
+  box-shadow: 0 4px 8px rgb(21, 5, 5); /* Añade una sombra para un efecto más destacado */
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Sombra en el texto */
 }
 h5 {
@@ -89,7 +105,7 @@ p {
   margin: 50px auto; /* Centra horizontalmente */
 
   font-family: 'Cursive', "Segoe Script", cursive;
-  font-size: 1.1em;
+  font-size: 1.0em;
   text-align: justify; /* Alinea el texto */
   border-radius: 80px; /* Bordes suaves */
   overflow: hidden; /* Evita desbordamientos */
@@ -97,7 +113,7 @@ p {
 }
 
 /* Ajustes de texto dentro del contenedor */
-.message-container h1 {
+.message-container h2 {
   font-size: 1.8em;
   margin-bottom: 20px;
   color: #4b2e20;
