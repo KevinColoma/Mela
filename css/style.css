@@ -35,6 +35,8 @@ footer{
   box-shadow: 0 4px 15px rgb(21, 5, 5); /* Añade una sombra para un efecto más destacado */
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 1); /* Sombra en el texto */
 }
+
+
 /* Tipografía */
 h1, h5 {
   font-family: 'Cursive', "Lucida Handwriting", cursive;
