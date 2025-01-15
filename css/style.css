@@ -100,8 +100,8 @@ h5:hover {
 
 h6 {
   color: #ad1457;
-  background-color: rgba(0, 0, 0, 0.5);
-  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.09);
+  border-radius: 10px;
   display: inline-block;
   font-weight: bold;
   padding: 10px;
@@ -112,12 +112,14 @@ h6 {
 }
 
 h6::after {
-  content: "GUAPAAAAAAAA !"; /* El texto que aparecerá en el hover */
+  content: "GUAPAAAAAAAA!"; /* El texto que aparecerá en el hover */
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
+  font-weight: bold;
+  font-size: larger;
   opacity: 0; /* Oculto por defecto */
   visibility: hidden; /* No visible por defecto */
   transition: opacity 0.3s ease, visibility 0.3s ease;
