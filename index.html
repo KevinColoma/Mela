@@ -267,10 +267,11 @@
 <!-- Scripts para controlar el carrusel -->
 <script>
   // Scripts para controlar el carrusel
+  // Scripts para controlar el carrusel
   const carouselElement = document.querySelector('#galleryCarousel');
   const pauseButton = document.querySelector('#pauseButton');
   const playButton = document.querySelector('#playButton');
-  const carouselInstance = new bootstrap.Carousel(carouselElement, { interval: 2000 }); // Inicializar el carrusel
+  const carouselInstance = new bootstrap.Carousel(carouselElement, { interval:200 }); // Inicializar el carrusel
   let isPaused = false; // Variable para controlar el estado de pausa
 
   // Botón de Pausar
@@ -309,6 +310,13 @@
       audio.pause(); // Pausa cualquier audio en reproducción
       audio.currentTime = 0; // Reinicia al principio
     });
+  });
+
+  // Configurar slide aleatorio al cargar la página
+  document.addEventListener('DOMContentLoaded', () => {
+    const totalSlides = document.querySelectorAll('.carousel-item').length; // Número total de slides
+    const randomSlide = Math.floor(Math.random() * totalSlides); // Índice aleatorio
+    carouselInstance.to(randomSlide); // Mover al slide aleatorio
   });
 
 
