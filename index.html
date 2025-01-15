@@ -18,7 +18,7 @@
     <a class="navbar-brand" href="https://music.youtube.com/playlist?list=PLcoz1Ystd_ufGZ0FZvZJm0L5k2EH9Fu07&si=F6tgqdmYtEzfmkwM">Playlist</a>
   </div>
   <!-- Botones pausa y play carrousel -->
-  <div class="text-center mt-3">
+  <div class="text-center mt-3" style="box-shadow: 0 4px 8px rgb(21, 5, 5); border-radius: 10px;">
     <button id="pauseButton" class="btn btn-danger">Pausar  ⏸️  </button>
     <button id="playButton" class="btn btn-success d-none">Reanudar ▶️  </button>
   </div>
@@ -241,11 +241,11 @@
   <div id="message3" class="message-container">
   <p>Cuando mandaste esos audios diciendo que te faltaba nota en inventario y estabas mal, me dejaste triste. Con esa voz casi quebrándose, nunca te escuché así. Me dejó un nudo en la garganta <span class="emoji">😅</span>.</p>
 
-  <p>Quería decírtelo en persona tantas veces… pero literalmente me quedo en blanco.</p>
+  <p id="resumen">Quería decírtelo en persona tantas veces… pero literalmente me quedo en blanco.</p>
 
     <p class="highlight">:'</p><p> Al menos quería que lo supieras.</p>
 
-    <p id="resumen">Siempre me gustaste, pero nunca supe cómo hablarte ni expresarme frente a ti, y siento que eso complicó muchas cosas.</p>
+    <p >Siempre me gustaste, pero nunca supe cómo hablarte ni expresarme frente a ti, y siento que eso complicó muchas cosas.</p>
     <p>Sobre el comentario en esa publicación de Insta... ¿que te estaba vendiendo? Yo, ¿en serio? Obvio que no. Escribí <strong>"info al interno"</strong> para saber quién preguntaba. Jamás pensé que habría tal malentendido 💔.</p>
     <p>La última vez que te vi parecías cansada, o tal vez enojada conmigo... No sé. Me sentí como un completo idiota, bien estúpido, un imbécil. No sé cómo describir lo que pasó por mi mente ese momento. Me puse tan nervioso que hasta confundí los días, como siempre me pasa cuando estás cerca.</p>
     <p>Espero que un día pueda olvidarme de ti y de esa carita que siempre me dejaba sin palabras. Perdón por todo... 😔</p>
@@ -271,7 +271,7 @@
   const carouselElement = document.querySelector('#galleryCarousel');
   const pauseButton = document.querySelector('#pauseButton');
   const playButton = document.querySelector('#playButton');
-  const carouselInstance = new bootstrap.Carousel(carouselElement, { interval:200 }); // Inicializar el carrusel
+  const carouselInstance = new bootstrap.Carousel(carouselElement, { interval:100 }); // Inicializar el carrusel
   let isPaused = false; // Variable para controlar el estado de pausa
 
   // Botón de Pausar
