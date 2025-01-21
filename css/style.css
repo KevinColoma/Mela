@@ -95,7 +95,7 @@ h5 {
 h5:hover {
   color: #fff; /* Cambia el color del texto al pasar el mouse */
   background-color: #ad1457; /* Cambia el fondo */
-  transform: scale(1.2); /* Aumenta ligeramente el tamaño */
+  transform: scale(1.3); /* Aumenta ligeramente el tamaño */
 }
 .carousel-control-prev,
 .carousel-control-next {
@@ -153,18 +153,21 @@ p {
   height: auto;
   border-radius: 80%; /* Suaviza los bordes */
   transition: transform 0.3s, box-shadow 0.5s;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.9);
+  box-shadow: 0 4px 20px 10px rgba(0, 0, 0, 0.4);
+
 }
 .gallery img:hover {
   transform: scale(1.05);
   border-radius: 50%; /* Cambio a bordes circulares */
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 4px 20px 10px rgba(0, 0, 0, 0.4);
+
 }
 
 /* Carrusel */
 .carousel img {
   border-radius: 50px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 4px 20px 10px rgba(0, 0, 0, 0.4);
+
 }
 .carousel-caption h5 {
   font-family: 'Cursive', "Lucida Handwriting", cursive;
@@ -189,7 +192,14 @@ p {
   border-radius: 80px; /* Bordes suaves */
   overflow: hidden; /* Evita desbordamientos */
 
+  transition: transform 0.3s ease; /* Suaviza el efecto de acercamiento */
 }
+
+/* Hover para acercamiento */
+.message-container:hover {
+  transform: scale(1.05); /* Aumenta el tamaño un 5% */
+}
+
 
 /* Ajustes de texto dentro del contenedor */
 .message-container h2 {
