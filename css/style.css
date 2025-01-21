@@ -97,7 +97,10 @@ h5:hover {
   background-color: #ad1457; /* Cambia el fondo */
   transform: scale(1.2); /* Aumenta ligeramente el tamaño */
 }
-
+.carousel-control-prev,
+.carousel-control-next {
+  display: none;
+}
 h6 {
   color: #ad1457;
   background-color: rgba(0, 0, 0, 0.09);
