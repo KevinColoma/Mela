@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
   <title>Mosaico de Corazones</title>
 
   <!-- Bootstrap CSS -->
@@ -12,6 +12,8 @@
     body {
       background-color: black;
       overflow: hidden;
+      margin: 0;
+      padding: 0;
     }
     .heart {
       position: absolute;
@@ -30,7 +32,10 @@
     /* Botón flotante en la esquina superior izquierda */
     .btn-floating {
       position: fixed;
-      top: 20px;
+     /* top: 20px;
+      left: 20px;*/
+
+      bottom: 20px;
       left: 20px;
       background-color: #ff4d4d;
       color: white;
@@ -46,12 +51,13 @@
       transition: transform 0.2s, box-shadow 0.2s;
       z-index: 9999; /* Asegura que esté siempre al frente */
     }
+
     .btn-floating:hover {
       transform: scale(1.1);
       box-shadow: 0px 6px 15px rgba(255, 0, 0, 0.7);
     }
 
-
+    /* Ajuste para dispositivos móviles */
     @media (max-width: 576px) {
       .btn-floating {
         width: 50px;
@@ -61,12 +67,6 @@
         right: 10px;
       }
     }
-
-    .btn-floating:hover {
-      transform: scale(1.1);
-      box-shadow: 0px 6px 15px rgba(255, 0, 0, 0.7);
-    }
-
   </style>
 </head>
 <body>
@@ -90,8 +90,8 @@
       "😍 💓",
       "💌 para ti 😘",
       "Que vergüenza",
-      "No te enojes🥲"
-
+      "No te enojes🥲",
+      "Que Guapaa!"
     ];
 
     // Seleccionar un mensaje aleatorio
@@ -101,11 +101,11 @@
     let size = Math.random() * 20 + 10; // Tamaño entre 10px y 30px
     heart.style.fontSize = size + "px";
 
-    let x = Math.random() * window.innerWidth;
-    let y = Math.random() * window.innerHeight;
+    let x = Math.random() * 100; // Tamaño relativo al ancho de la ventana (en %)
+    let y = Math.random() * 100; // Tamaño relativo a la altura de la ventana (en %)
 
-    heart.style.left = x + "px";
-    heart.style.top = y + "px";
+    heart.style.left = `${x}vw`;  // Utiliza vw para posiciones relativas
+    heart.style.top = `${y}vh`;   // Utiliza vh para posiciones relativas
 
     document.body.appendChild(heart);
 
@@ -114,9 +114,8 @@
     }, 4000);
   }
 
-  setInterval(createHeart, 99); // Crea un corazón cada 0.1 segundos
+  setInterval(createHeart, 30); // Crea un corazón
 </script>
-
 
 </body>
 </html>
