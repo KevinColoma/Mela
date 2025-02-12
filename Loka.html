@@ -27,10 +27,11 @@
     }
 
     /* Botón flotante */
+    /* Botón flotante en la esquina superior izquierda */
     .btn-floating {
       position: fixed;
-      bottom: 20px;
-      right: 20px;
+      top: 20px;
+      left: 20px;
       background-color: #ff4d4d;
       color: white;
       border: none;
@@ -49,6 +50,23 @@
       transform: scale(1.1);
       box-shadow: 0px 6px 15px rgba(255, 0, 0, 0.7);
     }
+
+
+    @media (max-width: 576px) {
+      .btn-floating {
+        width: 50px;
+        height: 50px;
+        font-size: 20px;
+        bottom: 10px;
+        right: 10px;
+      }
+    }
+
+    .btn-floating:hover {
+      transform: scale(1.1);
+      box-shadow: 0px 6px 15px rgba(255, 0, 0, 0.7);
+    }
+
   </style>
 </head>
 <body>
@@ -67,11 +85,12 @@
       "🫣KIM",
       "🥺  🥰",
       "LOKITA 💔",
-      "💖 Eres especial 💕",
+      "💖 sos especial 💕",
       "Me tienes bien pendejo 😔",
       "😍 💓",
-      "💌 Un mensajito para ti 😘",
-      "Que vergüenza"
+      "💌 para ti 😘",
+      "Que vergüenza",
+      "No te enojes🥲"
 
     ];
 
